@@ -7,6 +7,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt-get install nodejs -y
 WORKDIR /opt/node-app
 COPY . /opt/node-app
+ENV channelName=kablosuzkedim
 # COPY . .
 # CMD ["node","/opt/node-app/index.js"]
 CMD ["node","index.js"]
